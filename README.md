@@ -27,13 +27,13 @@ Při verifikaci jsme ověřovaly, zda při všech možnostech nastavení uzlů j
 ### Ilustrace základního běhu modelu
 Při nastavení modelu a zvolení typu sítě dojde k náhodnému pokrytí prostoru agenty, kteří jsou propojeni spojeními. Před spuštěním běhu je nastavitelný počet agentů obarven žlutou barvou. Tito agenti symbolizují distributory reklamy. Modré uzly symbolizují potenciální zákazníky. Každý žlutý agent má každý běh nějakou pravděpodobnost, se kterou trend rozšíří na sousedícího agenta a pravděpodobnost, že se z něj stane agent šedý. Šedý stav znamená, že podlehl trendu. 
 
-![náhodná a neškílovitá síť](http://jyxo.info/uploads/tn/C3/c30f097f713347915903b00cf383287dec7cdc5c.png)
+![náhodná a neškílovitá síť](http://jyxo.info/uploads/C3/c30f097f713347915903b00cf383287dec7cdc5c.png)
 
 ### Analýza
 V analytické části používáme data, která jsme získaly z NetLogo nástroje BehaviorSpace. Spustily jsme čtyři různé kombinace možností náhodná X bezškálová síť a iniciální napadnutí hubů X nenapadnutí hubů. Každou z těchto možností jsme odsimulovaly 1000x a zprůměrovaly hodnoty, které nám vyšly. Jako sledovanou hodnotu jsme si vybraly počet výskytů uzlů, které podlehly trendu (šedé barevné označení). Nastavení pro tuto simulaci obsahovalo 40 uzlů a mezi nimi 45 spojení.  Nakažené uzly byly na počátku vždy tři. Šance pro rozšíření trendu byla 2,3 % a pro již zasažený uzel byla každé kolo pravděpodobnost 2,1 %, že se stane rezistentní.
 
 ### Graf 1: Průběh počtu uživatelů, kteří podlehli trendu při jednotlivých bězích
-![průběh šíření trendu](http://jyxo.info/uploads/tn/CD/cd60fbfa4a3fade0fd246c6a6368bc24d5fe2cf8.png)
+![průběh šíření trendu](http://jyxo.info/uploads/CD/cd60fbfa4a3fade0fd246c6a6368bc24d5fe2cf8.png)
 
 V grafu číslo 1 vidíme, že u náhodné sítě nehrálo počáteční nastavení, jestli cílit na huby nebo ne, příliš velkou roli. Rozdíl mezi attack_hubs? true a attack_hubs? false byl 1,95 uzlů, které v konečném důsledku podlehly trendu. U bezškálové sítě byl průběh relativně podobný, pokud nebyla použita možnost cílení reklamy. Pokud jsme se ovšem v počátku soustředily na huby, celý běh trval déle (126 ticků oproti 114 při attacka_hubs? false) a na konci přinesl více čtenářů. Při kombinaci bezškálové sítě a cílené reklamy jsme dostaly 15,85 čtenářů (o 3,57 oproti necílené).
 
